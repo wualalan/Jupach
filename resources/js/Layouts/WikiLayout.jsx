@@ -30,7 +30,7 @@ export default function WikiLayout({ user, children }) {
                                 <Link href={route('simbolos')} className="text-gray-500 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                     Símbolos
                                 </Link>
-                                <Link href="#" className="text-gray-500 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                                <Link href={route('contacto')} className="text-gray-500 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                     Contacto
                                 </Link>
                             </div>
@@ -121,10 +121,10 @@ export default function WikiLayout({ user, children }) {
                         {/* Widget 2: Community */}
                         <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg shadow-blue-200 p-6 text-white">
                             <h3 className="text-lg font-bold mb-2">Comunidad</h3>
-                            <p className="text-blue-100 text-sm mb-4">¡Siguenos en nuestras redes sociales para que no te pierdas nada!</p>
-                            <button className="w-full bg-white text-blue-600 py-2 rounded-lg font-bold text-sm hover:bg-blue-50 transition-colors">
+                            <p className="text-blue-100 text-sm mb-4">¡Síguenos en nuestras redes sociales para que no te pierdas nada!</p>
+                            <Link href={route('contacto')} className="block w-full bg-white text-blue-600 py-2 rounded-lg font-bold text-sm hover:bg-blue-50 transition-colors text-center">
                                 Conectar Ahora
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

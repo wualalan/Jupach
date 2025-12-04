@@ -31,6 +31,10 @@ Route::get('/simbolos', function () {
     return Inertia::render('Simbolos');
 })->name('simbolos');
 
+Route::get('/contacto', function () {
+    return Inertia::render('Contacto');
+})->name('contacto');
+
 Route::get('/diocesis/{slug}', function ($slug) {
     $pages = [
         'antofagasta' => 'Diocesis/Antofagasta',
