@@ -23,6 +23,14 @@ Route::get('/actividades', function () {
     return Inertia::render('Actividades');
 })->name('actividades');
 
+Route::get('/secciones', function () {
+    return Inertia::render('Secciones');
+})->name('secciones');
+
+Route::get('/simbolos', function () {
+    return Inertia::render('Simbolos');
+})->name('simbolos');
+
 Route::get('/diocesis/{slug}', function ($slug) {
     $pages = [
         'antofagasta' => 'Diocesis/Antofagasta',

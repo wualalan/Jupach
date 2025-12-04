@@ -24,6 +24,12 @@ export default function WikiLayout({ user, children }) {
                                 <Link href={route('historia')} className="text-gray-500 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                     Historia
                                 </Link>
+                                <Link href={route('secciones')} className="text-gray-500 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                                    Secciones
+                                </Link>
+                                <Link href={route('simbolos')} className="text-gray-500 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                                    Símbolos
+                                </Link>
                                 <Link href="#" className="text-gray-500 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                                     Contacto
                                 </Link>
@@ -115,7 +121,7 @@ export default function WikiLayout({ user, children }) {
                         {/* Widget 2: Community */}
                         <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg shadow-blue-200 p-6 text-white">
                             <h3 className="text-lg font-bold mb-2">Comunidad</h3>
-                            <p className="text-blue-100 text-sm mb-4">¡Únete a nuestro servidor de Discord para chatear con otros miembros!</p>
+                            <p className="text-blue-100 text-sm mb-4">¡Siguenos en nuestras redes sociales para que no te pierdas nada!</p>
                             <button className="w-full bg-white text-blue-600 py-2 rounded-lg font-bold text-sm hover:bg-blue-50 transition-colors">
                                 Conectar Ahora
                             </button>
@@ -129,7 +135,7 @@ export default function WikiLayout({ user, children }) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                     <div className="text-center">
                         <p className="text-gray-400 text-sm">
-                            &copy; {new Date().getFullYear()} Wiki Jupach. Creado con ❤️ y Laravel.
+                            &copy; {new Date().getFullYear()} Wiki Jupach.
                         </p>
                     </div>
                 </div>
